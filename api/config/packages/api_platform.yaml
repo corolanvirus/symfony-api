@@ -1,5 +1,11 @@
 api_platform:
     title: Hello API Platform
+    # api/config/packages/api_platform.yaml
+    swagger:
+        api_keys:
+            JWT:
+                name: Authorization
+                type: header
     version: 1.0.0
     # Mercure integration, remove if unwanted
     mercure: ~
@@ -7,4 +13,4 @@ api_platform:
     defaults:
         stateless: true
         cache_headers:
-            vary: ['Content-Type', 'Authorization', 'Origin']
+            vary: ["Content-Type", "Authorization", "Origin"]
